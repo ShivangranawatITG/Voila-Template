@@ -62,7 +62,6 @@ h2 {
     color: #FFFF;
     font-size: 32px;
     font-family: Poppins, sans-serif;
-    ;
     position: fixed;
     left: 130px;
     position: absolute;
@@ -149,6 +148,7 @@ header {
     visibility: hidden;
     opacity: 0;
     position: fixed;
+    cursor: pointer;
     transition: visibility 0s 0.1s, opacity 0.5s linear 0.1s;
     overflow-y: auto;
     max-height: 400px;
@@ -164,14 +164,11 @@ ul.heading_wrapper {
 .shop-navigation:hover {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s;
 }
 
 .header_wrapper:has(.shop-bar-hover:hover) .shop-navigation {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s;
-
 }
 
 .card-headings {
@@ -241,7 +238,6 @@ ul.heading_wrapper {
 .main-heading:hover .dropdown-content {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s;
 }
 
 .main-heading {
@@ -370,6 +366,61 @@ span.login {
     font-weight: 700;
 }
 
+.image_with_text_wrapper {
+    display: flex;
+    padding: 80px 30px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.voila_text {
+    background-color: #eee9e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 34px;
+    width: 100%;
+}
+
+.voila_text h3 {
+    font-size: 33px;
+    color: rgb(83, 86, 90);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.voila_text p {
+    line-height: 25px;
+    font-size: larger;
+    color: #53565A;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+.voila_text a {
+    background-color: #607186;
+    color: #FFFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.radius,
+.radius img {
+    border-radius: 5px;
+}
+
+.page_width {
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+
+
+/*Responsive code*/
+
 @media (max-width: 1320px) {
     .get_yours {
         top: 500px;
@@ -431,7 +482,8 @@ span.login {
         font-size: 20px;
         left: 100px;
     }
-     .sarch>input {
+
+    .sarch>input {
         width: 400px;
     }
 }
@@ -440,7 +492,8 @@ span.login {
     .text_wrapper {
         font-size: 15px;
     }
-     .sarch>input {
+
+    .sarch>input {
         width: 300px;
     }
 }
@@ -454,16 +507,20 @@ span.login {
         width: 33%;
         padding: 15px 50px;
     }
-    .side-panel{
+
+    .side-panel {
         width: 300px;
     }
-.side-panel-heading{
-    font-size: 20px;
-}
+
+    .side-panel-heading {
+        font-size: 20px;
+    }
+
     .logo {
         display: none;
     }
-     .sarch>input {
+
+    .sarch>input {
         width: 200px;
     }
 }
@@ -472,10 +529,12 @@ span.login {
     .text_wrapper {
         left: 70px;
     }
-    .side-panel{
+
+    .side-panel {
         width: 250px;
     }
-     .sarch>input {
+
+    .sarch>input {
         width: 150px;
     }
 }
