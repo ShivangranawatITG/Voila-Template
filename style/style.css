@@ -18,9 +18,9 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    color: gray;
+    color: #53565A;
     font-family: Poppins, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 video {
@@ -365,7 +365,48 @@ span.login {
     font-weight: 700;
 }
 
-.image_with_text_wrapper {
+.hamburger-bar.active {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hamburger-bar {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.close-button {
+    font-size: xx-large;
+    color: black;
+    cursor: pointer;
+}
+
+.hamburger-bar-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #53565a;
+    /* align-items: center; */
+    font-size: larger;
+    margin: auto;
+}
+
+.hamburger-bar-content ul li a {
+    color: #53565a;
+}
+
+
+/* .image_with_text_wrapper {
     display: flex;
     padding: 80px 30px;
     justify-content: space-between;
@@ -380,7 +421,7 @@ span.login {
     justify-content: center;
     gap: 20px;
     padding: 34px;
-    
+
 }
 
 .voila_text h3 {
@@ -442,14 +483,7 @@ span.login {
 .products {
     width: 20%;
 }
-
-
-
-
-
-
-
-
+ */
 
 
 
@@ -506,6 +540,8 @@ span.login {
 
     .hamburger {
         display: block;
+        font-size: xx-large;
+        cursor: pointer;
     }
 
     .sarch>input {

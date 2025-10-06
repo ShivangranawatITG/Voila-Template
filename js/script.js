@@ -1,5 +1,7 @@
 let btn = document.getElementById("searching")
 const settingsBtn = document.getElementById('setting');
+const hamburger = document.getElementById('hamburger');
+const hamburger_show = document.getElementById('hamburger-bar');
 const sidePanel = document.getElementById('sidePanel');
 
 
@@ -28,4 +30,11 @@ settingsBtn.addEventListener('click', () => {
 
 function closePanel() {
     sidePanel.classList.remove('open');
+}
+
+hamburger.addEventListener('click', () => {
+    hamburger_show.classList.toggle('active');
+})
+function close_head() {
+    hamburger_show.classList.remove('active');
 }
