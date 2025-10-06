@@ -127,8 +127,8 @@ header {
     width: 10px;
 }
 
-.shop-bar-hover:hover .icon,
-.about-hover:hover .icon {
+.shop-bar-hover:hover .roted,
+.about-hover:hover .roted {
     transform: rotate(180deg);
 }
 
@@ -205,8 +205,7 @@ ul.heading_wrapper {
 
 .about-hover:hover,
 .shop-bar-hover:hover {
-    border-bottom: 2px solid black;
-
+    text-decoration: underline 2px;
 }
 
 .dropdown-content {
@@ -348,7 +347,7 @@ ul.heading_wrapper {
 }
 
 button.shopping-button {
-    padding: 20px 40px;
+    padding: 20px 30px;
     width: fit-content;
     color: white;
     background: #435870;
@@ -381,7 +380,7 @@ span.login {
     justify-content: center;
     gap: 20px;
     padding: 34px;
-    width: 100%;
+    
 }
 
 .voila_text h3 {
@@ -415,6 +414,43 @@ span.login {
     max-width: 1600px;
     margin: auto;
 }
+
+.arrivals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_wrapper {
+    padding: 0px 30px;
+}
+
+.color_section {
+    background-color: #e1ede4;
+    padding-bottom: 80px;
+}
+
+.all_products {
+    display: flex;
+    gap: 10px;
+}
+
+.hat {
+    background-color: white;
+    width: 100%;
+}
+
+.products {
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
